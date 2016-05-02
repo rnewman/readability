@@ -1,4 +1,3 @@
-/*eslint-env es6:false*/
 /*
  * Copyright (c) 2010 Arc90 Inc
  *
@@ -27,9 +26,7 @@ var root = this;
  * @param {HTMLDocument} doc     The document to parse.
  * @param {Object}       options The options object.
  */
-var Readability = function(uri, doc, options) {
-  options = options || {};
-
+export function Readability(uri, doc, options = {}) {
   this._uri = uri;
   this._doc = doc;
   this._biggestFrame = false;
